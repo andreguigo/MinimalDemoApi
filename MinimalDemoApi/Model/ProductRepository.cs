@@ -23,7 +23,7 @@
                 new Product() { Description = "Monitor", Price = 149, Code = "mn2022" }
             };
         }
-        public List<Product> ProductList { get; set; }
+        public List<Product> ProductList { get; private set; }
 
         public Product AddProduct(Product p)
         {
@@ -46,7 +46,7 @@
 
         public bool UpdateProduct(Product p)
         {
-            var pTemp = (from product in ProductList where product.Code == product.Code select product).SingleOrDefault();
+            var pTemp = (from product in ProductList where product.Code == p.Code select product).SingleOrDefault();
             if(pTemp != null )
             {
                 pTemp.Description = p.Description;
