@@ -1,5 +1,9 @@
-# &#x1f4aa; Minimal Demo Api
+# Minimal Demo Api
 
-## Uma Web API com o mínimo necessário em .NET 6.
+A low-write Web API serving as a solution for implementing microservices and applications that consume minimal system dependencies `ASP.NET Core`.
 
-O código é um exemplo de Api com pouca escrita servindo como solução para implementação de microsserviços e aplicativos que consumam o mínimo de dependências do ASP .NET Core.
+Building
+---
+Prerequisites:
+
+* .Net 6
